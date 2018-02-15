@@ -1,9 +1,9 @@
-;;; solarized-theme-utils.el --- Utilities for solarized theme development
+;;; lunarized-theme-utils.el --- Utilities for lunarized theme development
 
 ;; Copyright (C) 2012 Thomas Frössman
 
 ;; Author: Thomas Frössman <thomasf@jossystem.se>
-;; URL: http://github.com/bbatsov/solarized-emacs
+;; URL: http://github.com/jashank/lunarized-emacs
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -25,11 +25,11 @@
 
 ;;;; Code:
 (require 'cl-lib)
-(require 'solarized)
+(require 'lunarized)
 
-(defun solarized-import-faces (&optional regexp already-defined)
+(defun lunarized-import-faces (&optional regexp already-defined)
   "Imports current effective face definitions by regular expression
-in the format of solarized-theme.el."
+in the format of lunarized-theme.el."
   (interactive (list (read-regexp "List faces matching regexp")))
   (let*
       ((all-faces (zerop (length regexp)))
@@ -69,5 +69,5 @@ in the format of solarized-theme.el."
 ;; byte-compile-warnings: (not cl-functions)
 ;; indent-tabs-mode: nil
 ;; End:
-(provide 'solarized-theme-utils)
-;;; solarized-theme-utils.el ends here
+(provide 'lunarized-theme-utils)
+;;; lunarized-theme-utils.el ends here
